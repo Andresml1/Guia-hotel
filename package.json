@@ -16,5 +16,10 @@
   "homepage": "https://bitbucket.org/andresac/guia-hoteles#readme",
   "devDependencies": {
     "lite-server": "^2.5.4"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "popper": "^1.0.1"
   }
 }
