@@ -4,6 +4,7 @@
   "description": "primer proyecto node js",
   "main": "index.html",
   "scripts": {
+    "dev": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -12,5 +13,8 @@
   },
   "author": "Andres Bedoya",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/andresac/guia-hoteles#readme"
+  "homepage": "https://bitbucket.org/andresac/guia-hoteles#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
 }
