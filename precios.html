@@ -116,18 +116,56 @@
                 </div>
                 <div class="tap-pane fade" id="tarjetas" role="tabpanel"
                 aria-labelledby="tarjetas-tap">
-                    <div class="d-flex justify-content-center">
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-header" style="background-color: rgb(184, 218, 255); color: black;">
-                                Tarjetas aceptadas
+                <div class="accordion" id="accordionTarjetas">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" 
+                                data-target="#collapseBasica" aria-expanded="true" aria-controls="collapseBasica">
+                                    Tarjeta Basica
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseBasica" class="collapse" aria-labelledby="headingOne" 
+                        data-parent="#accordionTarjetas">
+                            <div class="card-body">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi quidem cum molestias fuga eum inventore laboriosam quae repudiandae repellendus pariatur earum commodi exercitationem porro sapiente, beatae sint in quibusdam. Eius.
                             </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Tarjeta basica</li>
-                                <li class="list-group-item">Tarjeta Vip</li>
-                                <li class="list-group-item">Tarjeta Black</li>
-                            </ul>
                         </div>
                     </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" 
+                                data-toggle="collapse" data-target="#collapseVIP" aria-expanded="false" aria-controls="collapseVIP">
+                                Tarjeta VIP
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseVIP" class="collapse" aria-labelledby="headingTwo" 
+                        data-parent="#accordionTarjetas">
+                            <div class="card-body">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas sed possimus sapiente tempore consequatur sint cupiditate ipsa eveniet, nobis debitis, doloribus repellendus sequi neque enim non nesciunt laudantium molestiae laboriosam.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" 
+                                data-toggle="collapse" data-target="#collapseBlack" aria-expanded="false" aria-controls="collapseBlack">
+                                    Tarjeta Black
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseBlack" class="collapse" aria-labelledby="headingThree" 
+                        data-parent="#accordionTarjetas">
+                            <div class="card-body">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, dolores possimus facilis consectetur totam, aliquid deleniti omnis fugit magnam eveniet, blanditiis earum repudiandae consequuntur non? Explicabo illum ipsum asperiores dignissimos!
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 </div>
                 <div class="tap-pane fade" id="comentarios" role="tabpanel"
                     aria-labelledby="comentarios-tap">
