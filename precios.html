@@ -37,64 +37,103 @@
                     <li class="breadcrumb-item active" aria-current="page">Precios</li>
                 </ol>
             </nav>
-                <div class="table-responsive">
-                    <table class="table table-striped">
-                        <thead class="table-primary"">
-                            <th>Cailidad</th>
-                            <th>Pinamar</th>
-                            <th>Mar de plata</th>
-                            <th>Mar de oro</th>
-                            <th>Mar de platino</th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><span class="oi oi-star"></span></td>
-                                <td>$100</td>
-                                <td>$110</td>
-                                <td>$130</td>
-                                <td>$150</td>
-                            </tr>
-                            <tr>
-                                <td><span class="oi oi-star"></span>
-                                    <span class="oi oi-star"></span></td>
-                                <td>$210</td>
-                                <td>$230</td>
-                                <td>$240</td>
-                                <td>$250</td>
-                            </tr>
-                            <tr>
-                                <td><span class="oi oi-star"></span>
-                                    <span class="oi oi-star"></span>
-                                    <span class="oi oi-star"></span></td>
-                                <td>$300</td>
-                                <td>$310</td>
-                                <td>$320</td>
-                                <td>$350</td>
-                            </tr>
-                            <tr>
-                                <td><span class="oi oi-star"></span>
-                                    <span class="oi oi-star"></span>
-                                    <span class="oi oi-star"></span>
-                                    <span class="oi oi-star"></span></td>
-                                <td>$400</td>
-                                <td>$410</td>
-                                <td>$420</td>
-                                <td>$450</td>
-                            </tr>
-                            <tr>
-                                <td><span class="oi oi-star"></span>
-                                    <span class="oi oi-star"></span>
-                                    <span class="oi oi-star"></span>
-                                    <span class="oi oi-star"></span>
-                                    <span class="oi oi-star"></span></td>
-                                <td>$500</td>
-                                <td>$510</td>
-                                <td>$520</td>
-                                <td>$550</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="categoria-tap" data-toggle="tab" href="#categoria"
+                    role="tab" aria-controls="categoria" aria-selected="true">Categoria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="tarjetas-tap" data-toggle="tab" href="#tarjetas"
+                    role="tab" aria-controls="tarjetas" aria-selected="false">Tarjetas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="comentarios-tap" data-toggle="tab" href="#comentarios"
+                    role="tab" aria-controls="comentarios" aria-selected="false">Comentarios</a>
+                </li>
+            </ul>
+            <div class="tap-content" id="myTapContent">
+                <div class="tap-pane fade show active" id="categoria" role="tabpanel"
+                aria-labelledby="categoria-tap">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead class="table-primary"">
+                                <th>Cailidad</th>
+                                <th>Pinamar</th>
+                                <th>Mar de plata</th>
+                                <th>Mar de oro</th>
+                                <th>Mar de platino</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="oi oi-star"></span></td>
+                                    <td>$100</td>
+                                    <td>$110</td>
+                                    <td>$130</td>
+                                    <td>$150</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="oi oi-star"></span>
+                                        <span class="oi oi-star"></span></td>
+                                    <td>$210</td>
+                                    <td>$230</td>
+                                    <td>$240</td>
+                                    <td>$250</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="oi oi-star"></span>
+                                        <span class="oi oi-star"></span>
+                                        <span class="oi oi-star"></span></td>
+                                    <td>$300</td>
+                                    <td>$310</td>
+                                    <td>$320</td>
+                                    <td>$350</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="oi oi-star"></span>
+                                        <span class="oi oi-star"></span>
+                                        <span class="oi oi-star"></span>
+                                        <span class="oi oi-star"></span></td>
+                                    <td>$400</td>
+                                    <td>$410</td>
+                                    <td>$420</td>
+                                    <td>$450</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="oi oi-star"></span>
+                                        <span class="oi oi-star"></span>
+                                        <span class="oi oi-star"></span>
+                                        <span class="oi oi-star"></span>
+                                        <span class="oi oi-star"></span>
+                                    </td>
+                                    <td>$500</td>
+                                    <td>$510</td>
+                                    <td>$520</td>
+                                    <td>$550</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
+                <div class="tap-pane fade" id="tarjetas" role="tabpanel"
+                aria-labelledby="tarjetas-tap">
+                    <div class="d-flex justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-header" style="background-color: rgb(184, 218, 255); color: black;">
+                                Tarjetas aceptadas
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Tarjeta basica</li>
+                                <li class="list-group-item">Tarjeta Vip</li>
+                                <li class="list-group-item">Tarjeta Black</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tap-pane fade" id="comentarios" role="tabpanel"
+                    aria-labelledby="comentarios-tap">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam architecto debitis odio rem ut illum natus laborum aspernatur, reprehenderit est doloremque cumque consequatur, minus repudiandae ullam tempora. Eos, aperiam doloribus?
+                </div>
+            </div>
         </div>
         <footer>
             <div class="row">
