@@ -187,7 +187,7 @@
                         <h6 class="card-subtitle text-muted">Colombia</h6>
                         <img class="card-img-top" src="https://cache.marriott.com/marriottassets/marriott/WAWLC/wawlc-exterior-7823-hor-wide.jpg?interpolation=progressive-bilinear&downsize=1440px:*" alt="Responsive image">
                         <p class="card-text">Lorem ipsum, dolor sit amet consectetur. </p>
-                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#contacto">Contacto</button>
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>
                     </div>
                     <div>
                         <a class="btn btn-info btn-reserva" href="#" role="button" data-toggle="modal" data-target="#continuar">
@@ -276,7 +276,7 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
-        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <script>
             $(function() {
@@ -286,6 +286,23 @@
                     interval: 2000
                 })
 
+                $('#contacto').on('show.bs.modal', function(e){
+                    console.log('el modal')
+
+
+                    $('#contactoBtn').removeClass('btn-info');
+                    $('#contactoBtn').addClass('btn-primary');
+                    $('#contactoBtn').prop('disabled', true);
+                });
+                $('#contacto').on('show.bs.modal', function(e){
+                    console.log('el modal se  mostro')
+                });
+                $('#contacto').on('hidden.bs.modal', function(e){
+                    console.log('el model de contacto se oculta')
+                });  $('#contacto').on('hidden.bs.modal', function(e){
+                    console.log('el modal se oculto')
+                    $('#contactoBtn').prop('disabled', false);
+                });  
             });
         </script>
     </body>
