@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
         <title>Mundo Hotel</title>
     </head>
@@ -301,6 +301,8 @@
                     console.log('el model de contacto se oculta')
                 });  $('#contacto').on('hidden.bs.modal', function(e){
                     console.log('el modal se oculto')
+                    $('#contactoBtn').removeClass('btn-primary')
+                    $('#contactoBtn').addClass('btn-info');
                     $('#contactoBtn').prop('disabled', false);
                 });  
             });
